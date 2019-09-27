@@ -9,6 +9,9 @@ import (
 type Context struct {
 	*heldiamgo.Context
 	Token string   //token
+	Data map[interface{}]interface{}
+	Page *db.PageObj
+	Template string
 	Query db.Query //数据库连接
 }
 
